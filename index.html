@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chameli Devi Group of Institutions</title>
+
+    <style>
+        /* -------- GLOBAL CSS ---------- */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #0055a5;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #003f7f;
+        }
+        .hero {
+            background: url('https://image-static.collegedunia.com/public/reviewPhotos/292068/1494843473phpy8cUGH.jpeg') center/cover no-repeat;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .container {
+            padding: 40px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            background: #0055a5;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #003f7f;
+        }
+        .section {
+            display: none;   /* Hidden by default */
+            padding: 30px;
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #00000022;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .item-box {
+            background: #e7f0ff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #0055a5;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ---------- HEADER ----------- -->
+    <header>
+        <h1>Chameli Devi Group of Institutions</h1>
+        <p>Bhopal, Madhya Pradesh</p>
+    </header>
+
+    <!-- ---------- NAVIGATION ---------- -->
+  
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('Notice')">Notices</a>
+        <a href="#" onclick="showSection('exams')">Exams</a>
+        <a href="#" onclick="showSection('notes')">Notes</a>
+        <a href="#" onclick="showSection('Question paper')">Question Papers</a>
+    </nav>
+
+
+    <!-- ---------- HERO SECTION ---------- -->
+    <div class="hero">
+        Welcome to CDGI
+    </div>
+
+     <!-- NOTES SECTION -->
+    <div id="notes" class="section">
+        <h2>Notes</h2>
+        <div class="item-box" >
+            <strong>📘 First Year Notes</strong><br>
+            Physics, Chemistry, Maths 1 & 2, Basic Electrical
+        </div>
+
+        <div class="item-box">
+            <strong>📗 CSE Notes</strong><br>
+            Data Structure, DBMS, Operating System, OOP in Java
+        </div>
+
+        <div class="item-box">
+            <strong>📙 Mechanical Notes</strong><br>
+            SOM, TOM, Thermodynamics, Machine Design
+        </div>
+
+        <div class="item-box">
+            <strong>📕 Civil Notes</strong><br>
+            Surveying, Concrete Technology, RCC, Geotech Engineering
+        </div>
+    </div>
+
+    <!-- EXAM SECTION -->
+    <div id="exams" class="section">
+        <h2>Upcoming Exams & Updates</h2>
+
+        <div class="item-box">
+            <strong>📅 Semester Exams</strong><br>
+            Likely in May–June 2025 (Tentative)
+        </div>
+
+        <div class="item-box">
+            <strong>📝 Exam Form</strong><br>
+            Last date to fill the exam form: 30 April 2025
+        </div>
+
+        <div class="item-box">
+            <strong>📄 Admit Card</strong><br>
+            Will be available 10 days before exam.
+        </div>
+    </div>
+            <!-- NOTICES -->
+    <div id="Notice" class="section">
+        <h2>📢 Latest Notices</h2>
+
+        <div class="item-box">
+            <strong>Holiday Notice</strong><br>
+            University will remain closed on <b>26 January</b> (Republic Day).
+        </div>
+
+        <div class="item-box">
+            <strong>Exam Form Update</strong><br>
+            Late fees applicable from 25 April.
+        </div>
+
+        <div class="item-box">
+            <strong>New Syllabus Released</strong><br>
+            Updated syllabus for 1st year available.
+            <br><a class="download-btn" href="#">Download</a>
+        </div>
+    </div>
+       <!-- PAPERS -->
+       <div id="Question paper" class="section">
+        <h2>📄 Previous Year Question Papers</h2>
+
+         <div class="item-box">
+      <strong> First year Question Papers</strong>
+      <p>All Branches | 2023–2024</p>
+      <a href="https://drive.google.com/drive/folders/1BXWmI6RHcwyirHLoAfH6GE6O1wHy1mui?usp=drive_link">Download Papers</a>
+    </div>
+    <div class="item-box">
+      <strong> Second year Question Papers</strong>
+      <p>All Branches | 2023–2024</p>
+      <a href="#">Download Papers</a>
+    </div>
+    <div class="item-box">
+      <strong> Third year Question Papers</strong>
+      <p>All Branches | 2023–2024</p>
+      <a href="#">Download Papers</a>
+    </div>
+
+
+    <!-- ---------- FOOTER ---------- -->
+    <footer>
+        © 2025 Chameli Devi Group of Institutions Website | Created for Educational Purpose
+    </footer>
+
+    <!-- ---------- JAVASCRIPT ---------- -->
+    <script>
+        function showMessage() {
+            document.getElementById("info").innerText =
+                "RGPV conducts examinations for B.Tech, M.Tech, Diploma courses and more.";
+        }
+    </script>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(sec => {
+                sec.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
